@@ -62,6 +62,7 @@ const User = () => {
                     type="button"
                     class="btn btn-info"
                   >
+                    Update
                     <i class="fa-solid fa-pen-to-square"></i>
                   </Link>
 
@@ -70,6 +71,7 @@ const User = () => {
                     type="button"
                     class="btn btn-danger"
                   >
+                    Delete
                     <i class="fa-solid fa-trash"></i>
                   </button>
                 </td>
