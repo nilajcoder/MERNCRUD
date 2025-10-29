@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom';
 import toast from "react-hot-toast";
 import './adduser.css'
+import BASE_URL from  '../config';
 
 const Adduser = () => {
 
@@ -24,7 +25,7 @@ const Adduser = () => {
   const submitForm = async (e) => {
     e.preventDefault();
     await axios
-      .post("http://localhost:8000/api/user", user)
+      .post(`${BASE_URL}/user`, user)
       .then((response) => {
         toast.success(response.data.message, { position: "top-right" });
         navigate("/");
